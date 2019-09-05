@@ -18,6 +18,7 @@ const Header = styled.header`
 
 const List = styled.ul`
   display: flex;
+  width: 100vw;
 `;
 const Item = styled.li`
   width: 80px;

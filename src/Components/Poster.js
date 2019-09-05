@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -69,13 +69,13 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
   </Link>
 );
 
-Poster.propTypes = {
-  id: Proptypes.number.isRequired,
-  imageUrl: Proptypes.string,
-  title: Proptypes.string.isRequired,
-  rating: Proptypes.number,
-  year: Proptypes.string,
-  isMovie: Proptypes.bool
+Poster.prototype = {
+  id: PropTypes.number.isRequired,
+  imageUrl: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  rating: PropTypes.number,
+  year: PropTypes.string,
+  isMovie: PropTypes.bool
 };
 
 export default Poster;
